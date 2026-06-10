@@ -4,7 +4,7 @@
 
 [Image Credit: Think Stock](https://www.istockphoto.com/thinkstock)
 
-Containers provide a lightweight, portable way to package and run applications consistently across different computing environments. In HPC and research workflows, they simplify software deployment and ensure reproducibility.
+Software containers provide a lightweight, portable way to package and run applications consistently across different computing environments. In HPC and research workflows, they simplify software deployment and ensure reproducibility.
 
 ## Presentation Slides
 
