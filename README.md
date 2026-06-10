@@ -20,6 +20,7 @@ Software containers provide a lightweight, portable way to package and run appli
 
 - [Basic Docker and Kubernetes (2025)](https://www.youtube.com/watch?v=q2ALQ3JiemI)
 - [Voyager 101: Running AI Models on Voyager (2025)](youtube.com/watch?v=CwCB_HutntY)
+- [ACES Tutorial: Fundamentals of Containers (Fall 2025)](https://www.youtube.com/watch?v=6J7MGjtR9QY)
 
 ## About COMPLECS
 
