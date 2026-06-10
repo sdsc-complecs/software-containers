@@ -1,2 +1,2 @@
 # software-containers
-All about (singularity) containers (for now)
+All about ([Singularity](https://en.wikipedia.org/wiki/Apptainer)) containers (for now)
