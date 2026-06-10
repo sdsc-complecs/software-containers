@@ -10,11 +10,12 @@ Software containers provide a lightweight, portable way to package and run appli
 
 - [Software Containers](https://drive.google.com/file/d/1LLO_CxcRLFazLs3YVneZJFn-ip_I_Um0/view?usp=drive_link)
 
-## Tutorials
+## Exercises
 
-- [CIFAR through the tubes: Downloading data from the internet](tutorials/download.md)
-- [More files, more problems: Advantages and limitations of different filesystems](tutorials/filesystem.md)
-- [Globus: Getting Started With File Transfers](https://docs.globus.org/guides/tutorials/manage-files/transfer-files/) (using [ESnet Data Transfer Nodes](https://fasterdata.es.net/performance-testing/DTNs))
+- [Exercise 1: Python Shell Game](exercises/python-shell-game.md)
+- [Exercise 2: bind on through (to the other side)](exercises/bind-on-through.md)
+- [Exercise 3: dash dash nv to CIFAR](exercises/dash-dash-nv.md)
+- [Exercise 4: Distribute this Horovod](exercises/distribute-this-horovod.md)
 
 ## Additional References
 
