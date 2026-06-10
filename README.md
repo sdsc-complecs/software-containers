@@ -19,7 +19,8 @@ Software containers provide a lightweight, portable way to package and run appli
 ## Additional References
 
 - [Basic Docker and Kubernetes (2025)](https://www.youtube.com/watch?v=q2ALQ3JiemI)
-- 
+- [Voyager 101: Running AI Models on Voyager (2025)](youtube.com/watch?v=CwCB_HutntY)
+
 ## About COMPLECS
 
 COMPrehensive Learning for end-users to Effectively utilize CyberinfraStructure ([COMPLECS](https://www.sdsc.edu/education/training-programs/COMPLECS.html)) is a training program offered by the
