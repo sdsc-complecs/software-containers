@@ -17,7 +17,7 @@ Software containers provide a lightweight, portable way to package and run appli
 - [Exercise 3: dash dash nv to CIFAR](exercises/dash-dash-nv.md)
 - [Exercise 4: Distribute this Horovod](exercises/distribute-this-horovod.md)
 
-Temporary Refeerence: https://github.com/ciml-org/ciml-summer-institute-2025/tree/main/2.6_software_containers_for_scientific_and_hpc
+Temporary Reference: https://github.com/ciml-org/ciml-summer-institute-2025/tree/main/2.6_software_containers_for_scientific_and_hpc
 
 ## Additional References
 
