@@ -1,6 +1,6 @@
 # Exercise 1: Python Shell Game
 
-On your personal computer, you likely have a default installation of Python that came with your operating system.
+On your personal computer, you likely have a default installation of [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) that came with your operating system.
 
 *Command*
 ```
@@ -54,7 +54,7 @@ Python 3.6.8
 [mkandes@login02 ~]$
 ```
 
-But there you'll also find additional versions of Python in its software module environment.
+But there you'll also find additional versions of Python in its software [environment modules](https://en.wikipedia.org/wiki/Environment_Modules_(software)).
 
 *Command*
 ```
@@ -103,11 +103,11 @@ Python 3.8.12
 [mkandes@login02 ~]$
 ```
 
-You'll even find other versions of Python hidden within some modules like Anaconda.
+You'll even find additional versions of Python hidden within the modules themselves (e.g., like [Anaconda](https://en.wikipedia.org/wiki/Anaconda_(Python_distribution))). 
 
 *Command*
 ```
-
+module load anaconda3/2021.05
 ```
 
 *Output*
@@ -129,7 +129,7 @@ Python 3.8.8
 [mkandes@login02 ~]$
 ```
 
-We can even use Python within a Docker container.
+But even with all of these different version of Python loaded simultaneously, we can isolate the use of a specific version of Python we want to use within a [Docker](https://en.wikipedia.org/wiki/Docker_(software)) container using [Singularity](https://en.wikipedia.org/wiki/Apptainer)! Here, we first load SingularityPRO ...
 
 *Command* 
 ```
@@ -152,6 +152,8 @@ Currently Loaded Modules:
 SingularityPRO version 3.11-7.el8
 [mkandes@login02 ~]$
 ```
+
+... and then spawn an interactive [shell](https://docs.sylabs.io/guides/latest/user-guide/cli/singularity_shell.html) into our target container. 
 
 *Command*
 ```
