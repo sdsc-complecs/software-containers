@@ -14,7 +14,7 @@ Python 3.12.3
 mkandes@hardtack:~$
 ```
 
-The Linux distribution on a supercomputer like Expanse also has a default installation of Python.
+The Linux distribution on a supercomputer like [Expanse](https://www.sdsc.edu/systems/expanse/index.html) also has its own default installation of Python.
 
 *Command*
 ```
@@ -54,51 +54,53 @@ Python 3.6.8
 [mkandes@login02 ~]$
 ```
 
-You might also have other versions of Python available in local conda environments installed on your personal computer.
+But there you'll also find additional versions of Python in its software module environment.
 
 *Command*
 ```
-conda env list
+module spider python
 ```
 
 *Output*
 ```
-mkandes@hardtack:~$ conda env list
+[mkandes@login02 ~]$ module spider python
 
-# conda environments:
-#
-# * -> active
-# + -> frozen
-base                     /home/mkandes/software/miniforge/26.3.2-1
-hpcgpt-zendesk-clean-20260512     /home/mkandes/software/miniforge/26.3.2-1/envs/hpcgpt-zendesk-clean-20260512
-hpcgpt-zendesk-explore-20260512     /home/mkandes/software/miniforge/26.3.2-1/envs/hpcgpt-zendesk-explore-20260512
-icicle-tapis-20260522     /home/mkandes/software/miniforge/26.3.2-1/envs/icicle-tapis-20260522
-rehs-doccano-20260607     /home/mkandes/software/miniforge/26.3.2-1/envs/rehs-doccano-20260607
-rehs-labelstudio-20260608     /home/mkandes/software/miniforge/26.3.2-1/envs/rehs-labelstudio-20260608
+--------------------------------------------------------------------------------------------------------------------------------
+  python: python/3.8.5
+--------------------------------------------------------------------------------------------------------------------------------
 
-mkandes@hardtack:~$
+     Other possible modules matches:
+        py-python-dateutil, python/3.8.12, python3, python37
+
+    You will need to load all module(s) on any one of the lines below before the "python/3.8.5" module is available to load.
+
+      cpu/0.15.4  gcc/10.2.0
+      cpu/0.15.4  gcc/9.2.0
+      cpu/0.15.4  intel/19.1.1.217
+      gpu/0.15.4
+ 
+    Help:
+      The Python programming language.
+
+--------------------------------------------------------------------------------------------------------------------------------
+  To find other possible module matches execute:
+
+      $ module -r spider '.*python.*'
+
+[mkandes@login02 ~]$ module load gcc/10.2.0
+[mkandes@login02 ~]$ module load python/3.8.12
+[mkandes@login02 ~]$ module list
+
+Currently Loaded Modules:
+  1) shared            3) slurm/expanse/23.02.7   5) DefaultModules       7) python/3.8.12/7zdjza7
+  2) cpu/0.17.3b (c)   4) sdsc/1.0                6) gcc/10.2.0/npcyll4
+
+  Where:
+   c:  built natively for AMD Rome
+
+[mkandes@login02 ~]$ python --version
+Python 3.8.12
+[mkandes@login02 ~]$
 ```
 
-*Command*
-```
-conda activate rehs-doccano-20260607
-```
-
-*Output*
-```
-mkandes@hardtack:~$ conda activate rehs-doccano-20260607
-(rehs-doccano-20260607) mkandes@hardtack:~$ 
-```
-
-*Command*
-```
-python --version
-```
-
-*Output*
-```
-mkandes@hardtack:~$ conda activate rehs-doccano-20260607
-(rehs-doccano-20260607) mkandes@hardtack:~$ python --version
-Python 3.8.20
-(rehs-doccano-20260607) mkandes@hardtack:~$
-```
+*
