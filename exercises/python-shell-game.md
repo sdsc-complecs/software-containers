@@ -103,4 +103,66 @@ Python 3.8.12
 [mkandes@login02 ~]$
 ```
 
-*
+You'll even find other versions of Python hidden within some modules like Anaconda.
+
+*Command*
+```
+
+```
+
+*Output*
+```
+[mkandes@login02 ~]$ module load anaconda3/2021.05
+[mkandes@login02 ~]$ module list
+
+Currently Loaded Modules:
+  1) shared            3) slurm/expanse/23.02.7   5) DefaultModules       7) python/3.8.12/7zdjza7
+  2) cpu/0.17.3b (c)   4) sdsc/1.0                6) gcc/10.2.0/npcyll4   8) anaconda3/2021.05/q4munrg
+
+  Where:
+   c:  built natively for AMD Rome
+
+[mkandes@login02 ~]$ which python
+/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/anaconda3-2021.05-q4munrgvh7qp4o7r3nzcdkbuph4z7375/bin/python
+[mkandes@login02 ~]$ python --version
+Python 3.8.8
+[mkandes@login02 ~]$
+```
+
+We can even use Python within a Docker container.
+
+*Command* 
+```
+module load singularitypro
+```
+
+*Output*
+```
+[mkandes@login02 ~]$ module load singularitypro
+[mkandes@login02 ~]$ module list
+
+Currently Loaded Modules:
+  1) shared            3) slurm/expanse/23.02.7   5) DefaultModules       7) python/3.8.12/7zdjza7       9) singularitypro/3.11
+  2) cpu/0.17.3b (c)   4) sdsc/1.0                6) gcc/10.2.0/npcyll4   8) anaconda3/2021.05/q4munrg
+
+  Where:
+   c:  built natively for AMD Rome
+
+[mkandes@login02 ~]$ singularity --version
+SingularityPRO version 3.11-7.el8
+[mkandes@login02 ~]$
+```
+
+*Command*
+```
+singularity shell docker://quay.io/jupyter/pyspark-notebook:latest
+```
+
+*Output*
+```
+[mkandes@login02 ~]$ singularity shell docker://quay.io/jupyter/pyspark-notebook:latest
+INFO:    Using cached SIF image
+Singularity> python --version
+Python 3.13.13
+Singularity>
+```
