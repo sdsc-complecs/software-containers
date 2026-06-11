@@ -38,3 +38,27 @@ rehs-labelstudio-20260608     /home/mkandes/software/miniforge/26.3.2-1/envs/reh
 
 mkandes@hardtack:~$
 ```
+
+*Command*
+```
+conda activate rehs-doccano-20260607
+```
+
+*Output*
+```
+mkandes@hardtack:~$ conda activate rehs-doccano-20260607
+(rehs-doccano-20260607) mkandes@hardtack:~$ 
+```
+
+*Command*
+```
+python --version
+```
+
+*Output*
+```
+mkandes@hardtack:~$ conda activate rehs-doccano-20260607
+(rehs-doccano-20260607) mkandes@hardtack:~$ python --version
+Python 3.8.20
+(rehs-doccano-20260607) mkandes@hardtack:~$
+```
