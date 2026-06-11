@@ -14,7 +14,7 @@ Python 3.12.3
 mkandes@hardtack:~$
 ```
 
-You might also have other versions of Python available in any local conda environments on your personal computer.
+You might also have other versions of Python available in local conda environments installed on your personal computer.
 
 *Command*
 ```
