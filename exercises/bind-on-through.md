@@ -62,7 +62,7 @@ mlflow-nfs.ipynb	      version_info.json
 Singularity>
 ```
 
-It looks bascially the same, no? That's because Singularity will [bind mount](https://en.wikipedia.org/wiki/Mount_(Unix)#Bind_mounting) your $HOME directory by default. That's great since you'll likely need access to some input data in your HOME directory at some point when running your containers. Similariy, it'll allow you to write any output back to your HOME directory as well. 
+It looks the same, no? That's because Singularity will [bind mount](https://en.wikipedia.org/wiki/Mount_(Unix)#Bind_mounting) your $HOME directory into the container by default. That's great since you'll likely need access to some input data in your HOME directory at some point when running your containers. Similariy, it'll allow you to write any output back to your HOME directory as well. 
 
 However, supercomputers like Expanse also typically have additional specialized filesystems for different uses. For example, Expanse has a [Lustre filesystem](https://en.wikipedia.org/wiki/Lustre_(file_system)) that containers both project storage and scratch spaces. 
 
