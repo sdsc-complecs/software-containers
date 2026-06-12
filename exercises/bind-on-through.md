@@ -107,3 +107,5 @@ ICICLE-ML-BENCHMARK  ptl-cuda-12-1.sif
 cp2k-h2o	     rstudio-server-conda.sh
 Singularity>
 ```
+
+See the [Bind Paths and Mounts](https://docs.sylabs.io/guides/latest/user-guide/bind_paths_and_mounts.html) section of the Singularity User Guide for more information. 
