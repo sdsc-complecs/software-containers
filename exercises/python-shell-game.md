@@ -54,7 +54,7 @@ Python 3.6.8
 [mkandes@login02 ~]$
 ```
 
-But there you'll also find additional versions of Python in its software [environment modules](https://en.wikipedia.org/wiki/Environment_Modules_(software)).
+But on a supercomputer like Expanse, you'll also find additional versions of Python in its standard software [environment modules](https://en.wikipedia.org/wiki/Environment_Modules_(software)).
 
 *Command*
 ```
@@ -103,7 +103,7 @@ Python 3.8.12
 [mkandes@login02 ~]$
 ```
 
-You'll even find additional versions of Python hidden within the modules themselves (e.g., like [Anaconda](https://en.wikipedia.org/wiki/Anaconda_(Python_distribution))). 
+Some versions may even be hidden within the modules themselves (e.g., like [Anaconda](https://en.wikipedia.org/wiki/Anaconda_(Python_distribution))). 
 
 *Command*
 ```
