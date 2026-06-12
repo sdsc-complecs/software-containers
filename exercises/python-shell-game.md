@@ -172,7 +172,6 @@ singularity shell docker://quay.io/jupyter/pyspark-notebook:latest
 
 *Output*
 ```
-[mkandes@login02 ~]$ singularity shell docker://quay.io/jupyter/pyspark-notebook:latest
 [mkandes@exp-9-55 ~]$ singularity shell docker://quay.io/jupyter/pyspark-notebook:latest
 INFO:    Converting OCI blobs to SIF format
 WARNING: 'nodev' mount option set on /scratch, it could be a source of failure during build process
