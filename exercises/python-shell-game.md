@@ -18,7 +18,7 @@ The Linux distribution on a supercomputer like [Expanse](https://www.sdsc.edu/sy
 
 *Command*
 ```
-python --version
+ssh mkandes@login.expanse.sdsc.edu
 ```
 
 *Output*
