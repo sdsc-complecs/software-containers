@@ -192,3 +192,5 @@ Singularity> python --version
 Python 3.13.13
 Singularity>
 ```
+
+See the [Bind Paths and Mounts](https://docs.sylabs.io/guides/latest/user-guide/bind_paths_and_mounts.html) section in the Singularity User Guide for more information
