@@ -129,28 +129,38 @@ Python 3.8.8
 [mkandes@login02 ~]$
 ```
 
-But even with all of these different version of Python loaded simultaneously, we can isolate the use of a specific version of Python we want to use within a [Docker](https://en.wikipedia.org/wiki/Docker_(software)) container using [Singularity](https://en.wikipedia.org/wiki/Apptainer)! Here, we first load SingularityPRO ...
+But even with all of these different version of Python loaded simultaneously, we can isolate the use of a specific version of Python we want to use within a [Docker](https://en.wikipedia.org/wiki/Docker_(software)) container using [Singularity](https://en.wikipedia.org/wiki/Apptainer)! 
+
+Here, we first create an interactive session on one of Expanse's compute nodes and load SingularityPRO ...
 
 *Command* 
 ```
-module load singularitypro
+srun --partition=debug --account=use300 --nodes=1 --ntasks-per-node=1 --cpus-per-task=4 --mem=8G --time=00:30:00 --pty --wait=0 /bin/bash
 ```
 
 *Output*
 ```
-[mkandes@login02 ~]$ module load singularitypro
-[mkandes@login02 ~]$ module list
+srun --partition=debug --account=use300 --nodes=1 --ntasks-per-node=1 --cpus-per-task=4 --mem=8G --time=00:30:00 --pty --wait=0 /bin/bash
+srun: job 50732862 queued and waiting for resources
+srun: job 50732862 has been allocated resources
+[mkandes@exp-9-55 ~]$ module load singularitypro
+[mkandes@exp-9-55 ~]$ module list
 
 Currently Loaded Modules:
-  1) shared            3) slurm/expanse/23.02.7   5) DefaultModules       7) python/3.8.12/7zdjza7       9) singularitypro/3.11
-  2) cpu/0.17.3b (c)   4) sdsc/1.0                6) gcc/10.2.0/npcyll4   8) anaconda3/2021.05/q4munrg
+  1) shared                      6) gcc/10.2.0/npcyll4
+  2) cpu/0.17.3b           (c)   7) python/3.8.12/7zdjza7
+  3) slurm/expanse/23.02.7       8) anaconda3/2021.05/q4munrg
+  4) sdsc/1.0                    9) singularitypro/3.11
+  5) DefaultModules
 
   Where:
    c:  built natively for AMD Rome
 
-[mkandes@login02 ~]$ singularity --version
+ 
+
+[mkandes@exp-9-55 ~]$ singularity --version
 SingularityPRO version 3.11-7.el8
-[mkandes@login02 ~]$
+[mkandes@exp-9-55 ~]$
 ```
 
 ... and then spawn an interactive [shell](https://docs.sylabs.io/guides/latest/user-guide/cli/singularity_shell.html) into our target container. 
@@ -163,7 +173,22 @@ singularity shell docker://quay.io/jupyter/pyspark-notebook:latest
 *Output*
 ```
 [mkandes@login02 ~]$ singularity shell docker://quay.io/jupyter/pyspark-notebook:latest
-INFO:    Using cached SIF image
+[mkandes@exp-9-55 ~]$ singularity shell docker://quay.io/jupyter/pyspark-notebook:latest
+INFO:    Converting OCI blobs to SIF format
+WARNING: 'nodev' mount option set on /scratch, it could be a source of failure during build process
+INFO:    Starting build...
+Getting image source signatures
+Copying blob ef288a9a5382 done   | 
+Copying blob ef288a9a5382 done   | 
+Copying blob 4f4fb700ef54 done   | 
+Copying blob 7ff1c663bf46 done   | 
+Copying blob 4f4fb700ef54 skipped: already exists
+...
+2026/06/11 17:05:33  info unpack layer: sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1
+2026/06/11 17:05:33  info unpack layer: sha256:700fee56564cd98400351f9fbcc6022ea446a864ee1d7054e9c061c0a36513d9
+2026/06/11 17:05:33  warn rootless{opt/conda/share/gdb/auto-load/opt/conda/lib/libarrow.so.2400.0.0-gdb.py} ignoring (usually) harmless EPERM on setxattr "user.rootlesscontainers"
+2026/06/11 17:05:33  info unpack layer: sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1
+INFO:    Creating SIF file...
 Singularity> python --version
 Python 3.13.13
 Singularity>
