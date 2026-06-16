@@ -6,7 +6,7 @@ Software containers provide a lightweight, portable way to package and run appli
 
 - [Software Containers](https://drive.google.com/file/d/1LLO_CxcRLFazLs3YVneZJFn-ip_I_Um0/view?usp=drive_link)
 
-## Exercises
+## Hands-On Exercises
 
 - [Exercise 1: Python Shell Game](exercises/python-shell-game.md)
 - [Exercise 2: bind on through (to the other side)](exercises/bind-on-through.md)
