@@ -46,3 +46,14 @@ Submitted batch job 51395309
           51395309   compute tf2-trai  mkandes  R       0:01      1 exp-2-16
 [mkandes@login01 exercises]$
 ```
+
+Of course, however, TensorFlow is an example of a GPU-accesserated code base. So, let's try and run the model training on one of Expanse's GPUs.
+
+*Command*
+```
+sbatch run-tf2-train-cnn-cifar-gpu-shared.sh
+```
+
+*Output*
+```
+```
