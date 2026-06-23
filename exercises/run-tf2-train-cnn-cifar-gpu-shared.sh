@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 #SBATCH --job-name=tf2-train-cnn-cifar-gpu-shared
-#SBATCH --account=gue998
-#SBATCH --reservation=ciml25gpu
-#SBATCH --partition=gpu-shared
-#SBATCH --qos=gpu-shared-eot
+#SBATCH --account=sds280
+#SBATCH --reservation=ciml26gpu
+#SBATCH --partition=nairr-gpu-shared
+#SBATCH --qos=nairr-gpu-shared-eot
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=10
 #SBATCH --cpus-per-task=1
