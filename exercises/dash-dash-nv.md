@@ -32,5 +32,17 @@ time -p singularity exec --bind "${KERAS_HOME}:/tmp" docker://nvcr.io/nvidia/ten
   python3 -u tf2-train-cnn-cifar.py --classes 10 --precision fp32 --epochs 42 --batch_size 256
 ```
 
+*Command*
+```
+sbatch run-tf2-train-cnn-cifar-compute.sh 
+```
 
-[SINGULAIRTY_TMPDIR](https://docs.sylabs.io/guides/latest/user-guide/build_env.html#temporary-folders)
+*Output*
+```
+mkandes@login01 exercises]$ sbatch run-tf2-train-cnn-cifar-compute.sh 
+Submitted batch job 51395309
+[mkandes@login01 exercises]$ squeue --me
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          51395309   compute tf2-trai  mkandes  R       0:01      1 exp-2-16
+[mkandes@login01 exercises]$
+```
