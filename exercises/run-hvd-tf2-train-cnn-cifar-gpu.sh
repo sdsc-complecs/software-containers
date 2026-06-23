@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 #SBATCH --job-name=hvd-tf2-train-cnn-cifar-gpu
-#SBATCH --account=gue998
-#SBATCH --reservation=ciml25gpu
-#SBATCH --partition=gpu
+#SBATCH --account=sds280
+#SBATCH --reservation=ciml26gpu
+#SBATCH --partition=nairr-gpu
 #SBATCH --nodes=2
 #SBATCH --ntasks-per-node=4
 #SBATCH --cpus-per-task=1
