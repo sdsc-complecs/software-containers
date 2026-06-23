@@ -135,12 +135,12 @@ Here, we first create an interactive session on one of Expanse's compute nodes a
 
 *Command* 
 ```
-srun --partition=debug --account=use300 --nodes=1 --ntasks-per-node=1 --cpus-per-task=4 --mem=8G --time=00:30:00 --pty --wait=0 /bin/bash
+srun-shared
 ```
 
 *Output*
 ```
-srun --partition=debug --account=use300 --nodes=1 --ntasks-per-node=1 --cpus-per-task=4 --mem=8G --time=00:30:00 --pty --wait=0 /bin/bash
+[mkandes@login02 ~]$ srun-shared
 srun: job 50732862 queued and waiting for resources
 srun: job 50732862 has been allocated resources
 [mkandes@exp-9-55 ~]$ module load singularitypro
